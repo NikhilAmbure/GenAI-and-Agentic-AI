@@ -1,0 +1,51 @@
+-----------------------------------------
+- Langchain : LangChain is an open source framework with a pre-built 
+  agent architecture and integrations for any model or tool — so you 
+  can build agents that adapt as fast as the ecosystem evolves
+- Langchain is helpful to develop application which is LLM powered applications.
+- You can integrate 3rd party tools and APIs too. (Integration)
+- LangGraph : LangGraph Platform (tool: LangGraph Studio)
+- Also, LangGraph helps us to build the AI agents.
+- LangSmith : Cloud services (Debugging, Prompt managing, annotation, testing, monitoring)
+-----------------------------------------
+
+
+-----------------------------------------
+- Project Structure : uv package (it's backend is built in rust)
+
+- uv :
+- Project initialization : uv init
+- environment : uv venv -> Activate : .venv\Scripts\activate
+- package installation : uv add <package> or uv add -r requirements.txt
+- uv add ipykernel
+-----------------------------------------
+
+
+-----------------------------------------
+Getting started with Langchain :
+
+- Example 1: Simple LLM Call with Streaming
+
+- Initializing the model :
+- There are two techniques to initialization of model
+- first is newer(init_chat_model) and second is older apporach(ChatGroq)
+- messages : SystemMessage, HumanMessage, AIMessage(Response)
+
+- Invoke the model :
+- invoke the message to the model (Pass the message as a list)
+
+- Streaming : (Another way to invoke the model)
+- Divide the message into chunks (model.stream())
+- flush is used for memory
+
+
+- Example 2: 
+
+
+-----------------------------------------
+
+
+-----------------------------------------
+## QAchatbot
+- uv streamlit run QAchatbot.py
+-----------------------------------------
